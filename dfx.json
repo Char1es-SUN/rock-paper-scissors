@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "rock-paper-scissors-backend": {
+      "main": "src/rock-paper-scissors-backend/main.mo",
+      "type": "motoko"
+    },
+    "rock-paper-scissors-frontend": {
+      "dependencies": [
+        "rock-paper-scissors-backend"
+      ],
+      "source": [
+        "src/rock-paper-scissors-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "rock-paper-scissors-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}

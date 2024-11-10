@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors Game</title>
+    <script type="module" src="https://unpkg.com/@dfinity/identity@latest/dist/identity.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Rock Paper Scissors</h1>
+
+        <div class="user-info">
+          <button id="loginButton">Login</button>
+          <button id="logoutButton" style="display: none;">Logout</button>
+          <div id="user-id">Not logged in</div>
+        </div>
+        
+        <div class="score">
+            <div class="score-item">
+                Wins: <span id="wins">0</span>
+            </div>
+            <div class="score-item">
+                Losses: <span id="losses">0</span>
+            </div>
+        </div>
+
+        <div class="choices">
+            <button class="choice" data-choice="1">🪨</button>
+            <button class="choice" data-choice="2">📄</button>
+            <button class="choice" data-choice="3">✂️</button>
+        </div>
+
+        <div id="result">Choose your move!</div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+</body>
+</html>
